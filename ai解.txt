@@ -1,0 +1,19 @@
+#include<string.h>
+#include<windows.h>
+#include <stdio.h>
+
+int main() {
+    int T;
+    scanf("%d", &T);
+
+    // 清除输入缓冲区的内容
+    while (getchar() != '\n');
+
+    for (int i = 0; i < T; ++i) {
+        char sentence[21];  // 限制句子长度不超过20
+        fgets(sentence, sizeof(sentence), stdin);
+        printf("%s", sentence);
+    }
+
+    return 0;
+}
