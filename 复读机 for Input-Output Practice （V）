@@ -1,0 +1,13 @@
+#include <stdio.h>
+char str[25];
+int main()
+{
+    int n;
+    scanf("%d", &n);
+    getchar();
+    while (n --) {
+        gets(str);
+        puts(str);
+    }
+    return 0;
+}
